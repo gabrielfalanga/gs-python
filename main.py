@@ -32,17 +32,38 @@ def identificar_data_atual():
     return f'{dia} {mes} {ano}'
 
 
-def solicitar_estado():
-    estados_br = ["AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", 
-                  "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", 
-                  "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO"]
+def solicitar_estado_e_cidade():
+    estados_cidades = {
+        'BA': ['Ilhéus', 'Porto Seguro', 'Salvador'],
+        'RJ': ['Arraial do Cabo', 'Búzios', 'Paraty'],
+        'SP': ['Caraguatatuba', 'Santos', 'Praia Grande']
+    }
 
+    estado_selecionado = input('\nDigite a sigla do estado (BA, RJ ou SP)\n> ').upper()
+
+    if estado_selecionado in estados_cidades:
+        print('Digite o número correspondente à cidade')
+        for i, cidade in enumerate(estados_cidades[estado_selecionado]):
+            print(f'{i+1}. {cidade}')
+        try:
+            n_cidade_escolhida = int(input('> ')) - 1
+            cidade_selecionada = estados_cidades[estado_selecionado][n_cidade_escolhida]
+            return estado_selecionado, cidade_selecionada
+        except:
+            print('Digite somente o número correspondente à cidade.')
+    else:
+        print('Estado inválido. Tente novamente.')
+
+
+def solicitar_cidade(estado):
+    print('\nEscolha a cidade\n')
     while True:
-        estado = input('\nDigite a abreviação do estado (exemplo: SP)\n> ').upper().strip()
-        if estado in estados_br:
-            return estado
-        else:
-            print('\nEstado INVÁLIDO. Por favor, digite uma abreviação de estado válida.')
+        if estado == 'BA':
+            cidade = input('(I)lhéus\n(P)orto Seguro\n(S)alvador').upper()[0]
+        elif estado == 'RJ':
+            cidade = input('(A)rraial do Cabo\n(B)úzios\n(P)araty').upper()[0]
+        elif estado == 'SP':
+            cidade = input('(C)araguatatuba\n(S)antos\n(P)raia Grande').upper()[0]
 
 
 def verificar_ultimo_id(chamados):
@@ -94,10 +115,9 @@ ultimo_id = identificar_ultimo_id()
 id_chamado = ultimo_id + 1
 tipo = identificar_tipo_chamado()
 descricao = input('Descreva a situação\n> ').strip().capitalize().replace(',', ';')
-estado = solicitar_estado()
-cidade = input('Digite a cidade\n> ').title().strip()
-bairro = input('Digite o bairro\n> ').title().strip()
-rua = input('Digite a rua e, se possível, o número mais próximos do local\n> ').title().strip().replace(',', ';')
+estado, cidade = solicitar_estado_e_cidade()
+bairro = input('Digite o bairro mais próximo\n> ').title().strip()
+rua = input('Digite a rua e, se possível, o número mais próximos\n> ').title().strip().replace(',', ';')
 data = identificar_data_atual()
 hora = dt.datetime.now().strftime('%H:%M')
 
@@ -126,7 +146,7 @@ Número: {id_chamado}
 Tipo: {tipo}
 Descrição: {descricao}
 Local: {cidade} - {estado} | {rua}
-Data: {data}
-Horário: {hora}
+
+{data}  |  {hora}
 
 Obrigado pela colaboração!''')
