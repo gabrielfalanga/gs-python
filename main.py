@@ -3,7 +3,9 @@ import datetime as dt
 
 
 def identificar_tipo_chamado():
-    'Pede para o usuário selecionar o tipo de denúncia e o retorna.'
+    '''
+    Pede para o usuário selecionar o tipo de denúncia e o retorna.
+    '''
     while True:
         opcao_denuncia = input(menu_tipos_denuncia).upper()[0]
         if opcao_denuncia == 'A':
@@ -17,6 +19,9 @@ def identificar_tipo_chamado():
 
 
 def identificar_data_atual():
+    '''
+    Retorna data do sistema no formato: DD mes AAAA
+    '''
     mapa_meses = {
         1: 'jan', 2: 'fev', 3: 'mar', 4: 'abr', 5: 'mai', 
         6: 'jun', 7: 'jul', 8: 'ago', 9: 'set', 10: 'out',
@@ -33,69 +38,83 @@ def identificar_data_atual():
 
 
 def solicitar_estado_e_cidade():
+    '''
+    Exibe as opções de estados e cidades e retorna o estado e a cidade que o usuário escolheu.
+    '''
     estados_cidades = {
         'BA': ['Ilhéus', 'Porto Seguro', 'Salvador'],
         'RJ': ['Arraial do Cabo', 'Búzios', 'Paraty'],
         'SP': ['Caraguatatuba', 'Santos', 'Praia Grande']
     }
 
-    estado_selecionado = input('\nDigite a sigla do estado (BA, RJ ou SP)\n> ').upper()
+    verifica = False
+    while verifica == False:
+        estado_selecionado = input('\nDigite a sigla do estado (BA, RJ ou SP)\n> ').upper()[:2]
+        # se o estado escolhido for válido
+        if estado_selecionado in estados_cidades:
+            verifica = True  # encerra o loop
+        # se for inválido
+        else:
+            print('Digite uma sigla válida.')
 
-    if estado_selecionado in estados_cidades:
-        print('Digite o número correspondente à cidade')
+    while True:
+        print('\nDigite o número correspondente à cidade\n')
+        # exibe e numera as cidades disponíveis do estado selecionado
         for i, cidade in enumerate(estados_cidades[estado_selecionado]):
             print(f'{i+1}. {cidade}')
+        # se o número da opção digitado for válido, funciona
         try:
-            n_cidade_escolhida = int(input('> ')) - 1
+            n_cidade_escolhida = int(input('\n> ')) - 1
             cidade_selecionada = estados_cidades[estado_selecionado][n_cidade_escolhida]
             return estado_selecionado, cidade_selecionada
+        # se for inválido, causa:  ValueError na primeira linha do try  ou  IndexError na segunda linha do try
         except:
             print('Digite somente o número correspondente à cidade.')
-    else:
-        print('Estado inválido. Tente novamente.')
 
 
-def solicitar_cidade(estado):
-    print('\nEscolha a cidade\n')
-    while True:
-        if estado == 'BA':
-            cidade = input('(I)lhéus\n(P)orto Seguro\n(S)alvador').upper()[0]
-        elif estado == 'RJ':
-            cidade = input('(A)rraial do Cabo\n(B)úzios\n(P)araty').upper()[0]
-        elif estado == 'SP':
-            cidade = input('(C)araguatatuba\n(S)antos\n(P)raia Grande').upper()[0]
-
-
-def verificar_ultimo_id(chamados):
-    ultimo_id = int(chamados[-1]['id'])
-    return ultimo_id
-
-
-def identificar_ultimo_id():
+def gerar_id():
+    '''
+    Verifica o último ID do arquivo CSV e retorna o novo ID.\n
+    Novo ID = Último ID + 1
+    '''
     with open('chamados.csv', 'r', encoding='utf-8') as csv_chamados:
         linha = '-'
+        # enquanto a linha lida não for vazia
         while linha != '':
             linha = csv_chamados.readline()
             if linha != '':
+                # gera lista contendo cada um dos dados da linha em um índice
                 colunas = linha.split(',')
+                # pega o primeiro valor da lista (ID)
                 ultimo_id_encontrado = colunas[0]
 
-        return int(ultimo_id_encontrado)
+        novo_id = int(ultimo_id_encontrado) + 1
+        return novo_id
 
 
 def enviar_chamado_para_csv(chamado_novo):
+    '''
+    Recebe os dados do chamado em forma de lista e envia para chamados.csv.
+    '''
     c = chamado_novo
     with open('chamados.csv', 'a', encoding='utf-8') as csv_chamados:
-        csv_chamados.write(f"\n{c['id']},{c['tipo']},{c['estado']},{c['cidade']},{c['bairro']},{c['rua']},{c['data']},{c['hora']},{c['descricao']}")
+        # envia todos os dados da lista já no formato CSV
+        csv_chamados.write(f"\n{c[0]},{c[1]},{c[2]},{c[3]},{c[4]},{c[5]},{c[6]},{c[7]},{c[8]}")
 
 
-def limpar_console():
-    'Limpa o console, independente do sistema operacional.'
+def limpar_console(texto=''):
+    '''
+    Limpa o console, independente do sistema operacional.\n
+    Aceita o parâmetro "texto" que, se passado, é exibido no console após limpá-lo.
+    '''
     # Verifica o sistema operacional
     if os.name == 'nt':  # Windows
         os.system('cls')
     else:                # Unix/Linux/MacOS
         os.system('clear')
+
+    if texto != '':
+        print(texto)
 
 
 menu_tipos_denuncia = '''
@@ -107,39 +126,35 @@ Selecione o tipo do chamado
 
 > '''
 
+txt_tela_chamado = '---------- TELA DE CHAMADO ----------'
 
-# Iniciando o chamado do usuário
-print('Vamos realizar seu chamado.')
 
-ultimo_id = identificar_ultimo_id()
-id_chamado = ultimo_id + 1
+### Iniciando o chamado do usuário
+limpar_console(txt_tela_chamado)
+
+# recebendo todos os dados do chamado
+id_chamado = gerar_id()
 tipo = identificar_tipo_chamado()
-descricao = input('Descreva a situação\n> ').strip().capitalize().replace(',', ';')
+descricao = input('\nDescreva a situação\n> ').strip().capitalize().replace(',', ';')
+limpar_console(txt_tela_chamado)
 estado, cidade = solicitar_estado_e_cidade()
-bairro = input('Digite o bairro mais próximo\n> ').title().strip()
-rua = input('Digite a rua e, se possível, o número mais próximos\n> ').title().strip().replace(',', ';')
+bairro = input('\nDigite o bairro mais próximo\n> ').title().strip().replace(',', ';')
+rua = input('\nDigite a rua e, se possível, o número mais próximos\n> ').title().strip().replace(',', ';')
 data = identificar_data_atual()
 hora = dt.datetime.now().strftime('%H:%M')
+limpar_console()
 
-chamado = {
-    "id": id_chamado,
-    "tipo": tipo,
-    "estado": estado,
-    "cidade": cidade, 
-    "bairro": bairro, 
-    "rua": rua,
-    "data": data,
-    "hora": hora,
-    "descricao": descricao
-}
-
+# criando chamado em forma de lista para usar a função abaixo 
+chamado = [id_chamado, tipo, estado, cidade, bairro, rua, data, hora, descricao]
 enviar_chamado_para_csv(chamado)
 
-print('\nSeu chamado foi finalizado com sucesso e já será analisado e encaminhado para as autoridades competentes.')
-
-print(f'''\
+# finalizando chamado com ticket exibindo informações
+print(f'''
+Seu chamado foi finalizado com sucesso e já será 
+analisado e encaminhado para as autoridades competentes.
+      
 -----------------------------
-      TICKET DO CHAMADO
+|     TICKET DO CHAMADO     |
 -----------------------------
 
 Número: {id_chamado}     
@@ -148,5 +163,6 @@ Descrição: {descricao}
 Local: {cidade} - {estado} | {rua}
 
 {data}  |  {hora}
+-----------------------------
 
 Obrigado pela colaboração!''')
