@@ -1,0 +1,101 @@
+id,tipo,estado,cidade,bairro,rua,data,hora,descricao
+1,Animal em perigo,SP,Santos,Bairro De Santos,Rua De Santos; 59,01 jan 2023,12:25,Tartaruga está machucada.
+2,Pesca ilegal,RJ,Paraty,Bairro De Paraty,Rua De Paraty; 81,07 jan 2023,08:56,Há um grupo de pescadores com redes.
+3,Descarte inadequado,BA,Salvador,Bairro De Salvador,Rua De Salvador; 22,12 jan 2023,19:12,Alguns homens estão jogando sacos de lixo na areia.
+4,Pesca ilegal,SP,Santos,Bairro De Santos,Rua De Santos; 33,12 jan 2023,10:15,Estão pescando aqui onde não pode.
+5,Pesca ilegal,BA,Porto Seguro,Bairro De Porto,Orla Da Praia Das Conchas,13 jan 2023,10:18,Um homem alto de regata pescando no seu bote.
+6,Descarte inadequado,RJ,Búzios,Bairro De Búzios,Rua Da Ponte Vermelha,16 jan 2023,10:23,Jogaram uma caçamba de entulho na beira do rio.
+7,Animal em perigo,SP,Caraguatatuba,Bairro De Caraguatatuba,Rua Da Praia De Caraguá; 77,19 jan 2023,10:25,Há uma baleia de uns 6 metros encalhada na praia.
+8,Animal em perigo,SP,Praia Grande,Bairro Da Praia Grande,Rua Das Praias; 102,22 jan 2023,10:26,Tubarão com mordida de outro animal perto da areia.
+9,Animal em perigo,BA,Salvador,Bairro De Salvador,Rua De Salvador,25 jan 2023,10:27,Vários filhotes de tartaruga passando no meio das pessoas.
+10,Pesca ilegal,BA,Salvador,Bairro De Salvador,Rua De Salvador,29 jan 2023,11:25,Tem um grupo de estrangeiros pescando em lugar proibido.
+11,Animal em perigo,RJ,Arraial do Cabo,Bairro De Arraial,Rua Do Cabo,29 jan 2023,00:49,Achei um pássaro coberto de petróleo do vazamento de ontem.
+12,Descarte inadequado,SP,Praia Grande,Bairro Da Praia Grande,Rua Grande Da Praia; 690,02 fev 2023,00:51,Jogaram um monte de coisa de plástico na praia!
+13,Animal em perigo,RJ,Búzios,Bairro De Búzios,Rua Do Mar Azul; 59,06 fev 2023,12:25,Tartaruga está machucada.
+14,Pesca ilegal,RJ,Paraty,Bairro De Paraty,Rua De Paraty; 81,15 fev 2023,08:56,Há um grupo de pescadores com redes.
+15,Descarte inadequado,BA,Salvador,Bairro De Salvador,Rua De Salvador; 22,16 fev 2023,19:12,Alguns homens estão jogando sacos de lixo na areia.
+16,Pesca ilegal,SP,Santos,Bairro De Santos,Rua De Santos; 33,17 fev 2023,10:15,Estão pescando aqui onde não pode.
+17,Pesca ilegal,BA,Salvador,Bairro De Salvador,Rua De Salvador,17 fev 2023,10:18,Um homem alto de regata pescando no seu bote.
+18,Descarte inadequado,RJ,Búzios,Bairro De Búzios,Rua Da Ponte Vermelha,24 fev 2023,10:23,Jogaram uma caçamba de entulho na beira do rio.
+19,Animal em perigo,SP,Caraguatatuba,Bairro De Caraguatatuba,Rua Da Praia De Caraguá; 77,24 fev 2023,10:25,Há uma baleia de uns 6 metros encalhada na praia.
+20,Descarte inadequado,SP,Praia Grande,Bairro Da Praia Grande,Rua Das Praias; 102,28 fev 2023,10:26,Um monte de entulho perto do mar.
+21,Animal em perigo,BA,Salvador,Bairro De Salvador,Rua De Salvador,07 mar 2023,10:27,Vários filhotes de tartaruga passando no meio das pessoas.
+22,Pesca ilegal,BA,Salvador,Bairro De Salvador,Rua De Salvador,15 mar 2023,11:25,Tem um grupo de estrangeiros pescando em lugar proibido.
+23,Animal em perigo,RJ,Arraial do Cabo,Bairro De Arraial,Rua Do Cabo,18 mar 2023,00:49,Achei um pássaro coberto de petróleo do vazamento de ontem.
+24,Descarte inadequado,SP,Praia Grande,Bairro Da Praia Grande,Rua Grande Da Praia; 690,22 mar 2023,00:51,Jogaram um monte de coisa de plástico na praia!
+25,Descarte inadequado,BA,Ilhéus,Bairro De Ilhéus,Rua Da Praia Bonita; 732,22 mar 2023,10:27,Companhia de turismo jogou todo o lixo na água.
+26,Animal em perigo,SP,Santos,Bairro De Santos,Rua De Santos; 59,29 mar 2023,12:25,Tartaruga está machucada.
+27,Pesca ilegal,RJ,Búzios,Bairro De Búzios,Rua Do Mar Azul,05 abr 2023,08:56,Há um grupo de pescadores com redes.
+28,Descarte inadequado,BA,Salvador,Bairro De Salvador,Rua De Salvador; 22,06 abr 2023,19:12,Alguns homens estão jogando sacos de lixo na areia.
+29,Pesca ilegal,SP,Santos,Bairro De Santos,Rua De Santos; 33,09 abr 2023,10:15,Estão pescando aqui onde não pode.
+30,Pesca ilegal,BA,Porto Seguro,Bairro De Porto,Orla Da Praia Das Conchas,14 abr 2023,10:18,Um homem alto de regata pescando no seu bote.
+31,Descarte inadequado,RJ,Arraial do Cabo,Bairro De Arraial,Rua Do Cabo,17 abr 2023,10:23,Jogaram uma caçamba de entulho na beira do rio.
+32,Animal em perigo,SP,Caraguatatuba,Bairro De Caraguatatuba,Rua Da Praia De Caraguá; 77,21 abr 2023,10:25,Há uma baleia de uns 6 metros encalhada na praia.
+33,Animal em perigo,SP,Praia Grande,Bairro Da Praia Grande,Rua Das Praias; 102,22 abr 2023,10:26,Tubarão com mordida de outro animal perto da areia.
+34,Animal em perigo,BA,Salvador,Bairro De Salvador,Rua De Salvador,23 abr 2023,10:27,Vários filhotes de tartaruga passando no meio das pessoas.
+35,Pesca ilegal,BA,Porto Seguro,Bairro De Porto Seguro,Rua Porto Bonito; 77,01 mai 2023,11:25,Tem um grupo de estrangeiros pescando em lugar proibido.
+36,Animal em perigo,RJ,Arraial do Cabo,Bairro De Arraial,Rua Do Cabo,12 mai 2023,00:49,Achei um pássaro coberto de petróleo do vazamento de ontem.
+37,Descarte inadequado,SP,Praia Grande,Bairro Da Praia Grande,Rua Grande Da Praia; 690,21 mai 2023,00:51,Jogaram um monte de coisa de plástico na praia!
+38,Animal em perigo,RJ,Búzios,Bairro De Búzios,Rua Do Mar Azul; 59,25 mai 2023,12:25,Tartaruga está machucada.
+39,Descarte inadequado,BA,Porto Seguro,Bairro De Porto Seguro,Rua Porto Bonito,25 mai 2023,19:12,Alguns homens estão jogando sacos de lixo na areia.
+40,Pesca ilegal,SP,Santos,Bairro De Santos,Rua De Santos; 33,09 jun 2023,10:15,Estão pescando aqui onde não pode.
+41,Pesca ilegal,BA,Porto Seguro,Bairro De Porto,Orla Da Praia Das Conchas,13 jun 2023,10:18,Um homem alto de regata pescando no seu bote.
+42,Descarte inadequado,RJ,Paraty,Bairro De Paraty,Rua De Paraty,16 jun 2023,10:23,Jogaram uma caçamba de entulho na beira do rio.
+43,Animal em perigo,SP,Caraguatatuba,Bairro De Caraguatatuba,Rua Da Praia De Caraguá; 77,30 jun 2023,10:25,Há uma baleia de uns 6 metros encalhada na praia.
+44,Descarte inadequado,SP,Praia Grande,Bairro Da Praia Grande,Rua Das Praias; 102,03 jul 2023,10:26,Um monte de entulho perto do mar.
+45,Animal em perigo,BA,Porto Seguro,Bairro De Porto,Orla Da Praia Das Conchas,03 jul 2023,10:27,Vários filhotes de tartaruga passando no meio das pessoas.
+46,Pesca ilegal,BA,Porto Seguro,Bairro De Porto Seguro,Rua Porto Bonito; 77,04 jul 2023,11:25,Tem um grupo de estrangeiros pescando em lugar proibido.
+47,Animal em perigo,RJ,Paraty,Bairro De Paraty,Rua De Paraty,09 jul 2023,00:49,Achei um pássaro coberto de petróleo do vazamento de ontem.
+48,Descarte inadequado,SP,Caraguatatuba,Bairro De Caraguatatuba,Rua Da Praia De Caraguá,14 jul 2023,00:51,Jogaram um monte de coisa de plástico na praia!
+49,Descarte inadequado,BA,Ilhéus,Bairro De Ilhéus,Rua Da Praia Bonita; 732,16 jul 2023,10:27,Companhia de turismo jogou todo o lixo na água.
+50,Descarte inadequado,SP,Santos,Bairro De Santos,Rua De Santos,18 jul 2023,00:51,Jogaram um monte de coisa de plástico na praia!
+51,Animal em perigo,SP,Santos,Bairro De Santos,Rua De Santos; 59,20 jul 2023,12:25,Tartaruga está machucada.
+52,Pesca ilegal,RJ,Búzios,Bairro De Búzios,Rua Do Mar Azul; 59,20 jul 2023,08:56,Há um grupo de pescadores com redes.
+53,Descarte inadequado,BA,Porto Seguro,Bairro De Porto Seguro,Rua Porto Bonito,24 jul 2023,19:12,Alguns homens estão jogando sacos de lixo na areia.
+54,Pesca ilegal,SP,Santos,Bairro De Santos,Rua De Santos; 33,24 jul 2023,10:15,Estão pescando aqui onde não pode.
+55,Pesca ilegal,BA,Porto Seguro,Bairro De Porto,Orla Da Praia Das Conchas,25 jul 2023,10:18,Um homem alto de regata pescando no seu bote.
+56,Descarte inadequado,RJ,Arraial do Cabo,Bairro De Arraial,Rua Do Cabo,01 ago 2023,10:23,Jogaram uma caçamba de entulho na beira do rio.
+57,Animal em perigo,SP,Caraguatatuba,Bairro De Caraguatatuba,Rua Da Praia De Caraguá; 77,01 ago 2023,10:25,Há uma baleia de uns 6 metros encalhada na praia.
+58,Animal em perigo,SP,Praia Grande,Bairro Da Praia Grande,Rua Das Praias; 102,01 ago 2023,10:26,Tubarão com mordida de outro animal perto da areia.
+59,Animal em perigo,BA,Porto Seguro,Bairro De Porto,Orla Da Praia Das Conchas,15 ago 2023,10:27,Vários filhotes de tartaruga passando no meio das pessoas.
+60,Pesca ilegal,BA,Porto Seguro,Bairro De Porto Seguro,Rua Porto Bonito; 77,19 ago 2023,11:25,Tem um grupo de estrangeiros pescando em lugar proibido.
+61,Animal em perigo,RJ,Paraty,Bairro De Paraty,Rua De Paraty,23 ago 2023,00:49,Achei um pássaro coberto de petróleo do vazamento de ontem.
+62,Descarte inadequado,SP,Caraguatatuba,Bairro De Caraguatatuba,Rua Da Praia De Caraguá,31 ago 2023,00:51,Jogaram um monte de coisa de plástico na praia!
+63,Animal em perigo,RJ,Búzios,Bairro De Búzios,Rua Do Mar Azul; 59,09 set 2023,12:25,Tartaruga está machucada.
+64,Pesca ilegal,RJ,Arraial do Cabo,Bairro De Arraial,Rua Do Cabo,13 set 2023,08:56,Há um grupo de pescadores com redes.
+65,Descarte inadequado,BA,Salvador,Bairro De Salvador,Rua De Salvador; 22,16 set 2023,19:12,Alguns homens estão jogando sacos de lixo na areia.
+66,Pesca ilegal,SP,Praia Grande,Bairro Da Praia Grande,Rua Das Praias,17 set 2023,10:15,Estão pescando aqui onde não pode.
+67,Pesca ilegal,BA,Ilhéus,Bairro De Ilhéus,Rua Da Praia Bonita,01 out 2023,10:18,Um homem alto de regata pescando no seu bote.
+68,Descarte inadequado,RJ,Arraial do Cabo,Bairro De Arraial,Rua Do Cabo,17 out 2023,10:23,Jogaram uma caçamba de entulho na beira do rio.
+69,Animal em perigo,SP,Caraguatatuba,Bairro De Caraguatatuba,Rua Da Praia De Caraguá; 77,20 out 2023,10:25,Há uma baleia de uns 6 metros encalhada na praia.
+70,Descarte inadequado,SP,Caraguatatuba,Bairro De Caraguatatuba,Rua Da Praia De Caraguá,20 out 2023,10:26,Um monte de entulho perto do mar.
+71,Animal em perigo,BA,Ilhéus,Bairro De Ilhéus,Rua Da Praia Bonita; 732,24 out 2023,10:27,Vários filhotes de tartaruga passando no meio das pessoas.
+72,Pesca ilegal,BA,Ilhéus,Bairro De Ilhéus,Rua Da Praia Bonita,29 out 2023,11:25,Tem um grupo de estrangeiros pescando em lugar proibido.
+73,Animal em perigo,RJ,Arraial do Cabo,Bairro De Arraial,Rua Do Cabo,02 nov 2023,00:49,Achei um pássaro coberto de petróleo do vazamento de ontem.
+74,Descarte inadequado,SP,Praia Grande,Bairro Da Praia Grande,Rua Grande Da Praia; 690,05 nov 2023,00:51,Jogaram um monte de coisa de plástico na praia!
+75,Descarte inadequado,BA,Ilhéus,Bairro De Ilhéus,Rua Da Praia Bonita; 732,06 nov 2023,10:27,Companhia de turismo jogou todo o lixo na água.
+76,Animal em perigo,SP,Santos,Bairro De Santos,Rua De Santos; 59,10 nov 2023,12:25,Tartaruga está machucada.
+77,Pesca ilegal,RJ,Paraty,Bairro De Paraty,Rua De Paraty; 81,15 nov 2023,08:56,Há um grupo de pescadores com redes.
+78,Descarte inadequado,BA,Porto Seguro,Bairro De Porto Seguro,Rua Porto Bonito,16 nov 2023,19:12,Alguns homens estão jogando sacos de lixo na areia.
+79,Pesca ilegal,SP,Caraguatatuba,Bairro De Caraguatatuba,Rua Da Praia De Caraguá,26 nov 2023,10:15,Estão pescando aqui onde não pode.
+80,Pesca ilegal,BA,Ilhéus,Bairro De Ilhéus,Rua Da Praia Bonita,29 dez 2023,10:18,Um homem alto de regata pescando no seu bote.
+81,Descarte inadequado,RJ,Búzios,Bairro De Búzios,Rua Da Ponte Vermelha,05 dez 2023,10:23,Jogaram uma caçamba de entulho na beira do rio.
+82,Animal em perigo,SP,Praia Grande,Bairro Da Praia Grande,Rua Das Praias,06 dez 2023,10:25,Há uma baleia de uns 6 metros encalhada na praia.
+83,Animal em perigo,SP,Praia Grande,Bairro Da Praia Grande,Rua Das Praias; 102,07 dez 2023,10:26,Tubarão com mordida de outro animal perto da areia.
+84,Animal em perigo,BA,Ilhéus,Bairro De Ilhéus,Rua Da Praia Bonita; 732,12 dez 2023,10:27,Vários filhotes de tartaruga passando no meio das pessoas.
+85,Pesca ilegal,BA,Porto Seguro,Bairro De Porto Seguro,Rua Porto Bonito; 77,15 dez 2023,11:25,Tem um grupo de estrangeiros pescando em lugar proibido.
+86,Animal em perigo,RJ,Arraial do Cabo,Bairro De Arraial,Rua Do Cabo,19 dez 2023,00:49,Achei um pássaro coberto de petróleo do vazamento de ontem.
+87,Descarte inadequado,SP,Caraguatatuba,Bairro De Caraguatatuba,Rua Da Praia De Caraguá,23 dez 2023,00:51,Jogaram um monte de coisa de plástico na praia!
+88,Animal em perigo,RJ,Búzios,Bairro De Búzios,Rua Do Mar Azul; 59,24 dez 2023,12:25,Tartaruga está machucada.
+89,Descarte inadequado,BA,Salvador,Bairro De Salvador,Rua De Salvador; 22,25 dez 2023,19:12,Alguns homens estão jogando sacos de lixo na areia.
+90,Pesca ilegal,SP,Caraguatatuba,Bairro De Caraguatatuba,Rua Da Praia De Caraguá,25 dez 2023,10:15,Estão pescando aqui onde não pode.
+91,Pesca ilegal,BA,Salvador,Bairro De Salvador,Rua De Salvador,29 dez 2023,10:18,Um homem alto de regata pescando no seu bote.
+92,Descarte inadequado,RJ,Búzios,Bairro De Búzios,Rua Da Ponte Vermelha,30 dez 2023,10:23,Jogaram uma caçamba de entulho na beira do rio.
+93,Animal em perigo,SP,Caraguatatuba,Bairro De Caraguatatuba,Rua Da Praia De Caraguá; 77,02 jan 2024,10:25,Há uma baleia de uns 6 metros encalhada na praia.
+94,Descarte inadequado,SP,Praia Grande,Bairro Da Praia Grande,Rua Das Praias; 102,03 jan 2024,10:26,Um monte de entulho perto do mar.
+95,Animal em perigo,BA,Ilhéus,Bairro De Ilhéus,Rua Da Praia Bonita; 732,07 jan 2024,10:27,Vários filhotes de tartaruga passando no meio das pessoas.
+96,Pesca ilegal,BA,Salvador,Bairro De Salvador,Rua De Salvador,19 jan 2024,11:25,Tem um grupo de estrangeiros pescando em lugar proibido.
+97,Animal em perigo,RJ,Arraial do Cabo,Bairro De Arraial,Rua Do Cabo,27 jan 2024,00:49,Achei um pássaro coberto de petróleo do vazamento de ontem.
+98,Descarte inadequado,SP,Praia Grande,Bairro Da Praia Grande,Rua Grande Da Praia; 690,05 fev 2024,00:51,Jogaram um monte de coisa de plástico na praia!
+99,Descarte inadequado,BA,Ilhéus,Bairro De Ilhéus,Rua Da Praia Bonita; 732,06 fev 2024,10:27,Companhia de turismo jogou todo o lixo na água.
+100,Descarte inadequado,SP,Santos,Bairro De Santos,Rua De Santos,07 fev 2024,00:51,Jogaram um monte de coisa de plástico na praia!
