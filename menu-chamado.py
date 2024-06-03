@@ -30,7 +30,7 @@ def identificar_data_atual():
 
     data_atual = dt.datetime.today()
 
-    dia = data_atual.day
+    dia = f'{data_atual.day:0>2}'
     mes = mapa_meses[data_atual.month]
     ano = data_atual.year
 
