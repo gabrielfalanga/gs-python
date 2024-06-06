@@ -65,6 +65,7 @@ def solicitar_estado_e_cidade():
         # se o número da opção digitado for válido, funciona
         try:
             n_cidade_escolhida = int(input('\n> ')) - 1
+            # pega a cidade no dicionário 'estados_cidades'de acordo com a sigla do estado (chave) e o n° da cidade (índice da lista, que é o valor)
             cidade_selecionada = estados_cidades[estado_selecionado][n_cidade_escolhida]
             return estado_selecionado, cidade_selecionada
         # se for inválido, causa:  ValueError na primeira linha do try  ou  IndexError na segunda linha do try
